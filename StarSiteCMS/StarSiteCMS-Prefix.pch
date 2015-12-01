@@ -1,0 +1,41 @@
+//
+//  StarSiteCMS-Prefix.pch
+//  StarSiteCMS
+//
+//  Created by Vincent Tuscano on 9/27/14.
+//  Copyright (c) 2014 Vincent Tuscano. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+
+#define IOS_VERSION [[[[[UIDevice currentDevice] systemVersion] componentsSeparatedByString:@"."] firstObject] intValue]
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#import "SSConstants.h"
+#import "SSUser.h"
+#import "VTPush.h"
+#import "SSChannel.h"
+#import "SSParingItem.h"
+#import "SSFBPageAccess.h"
+#import "SSAPIRequestBuilder.h"
+#import "SSAppController.h"
+#import "UIView+Additions.h"
+#import "NSString+Additions.h"
+#import "UIButton+Additions.h"
+#import "UIColor+Additions.h"
+#import "UIImage+Additions.h"
+#import "NSData+Base64.h"
+#import "NSDate+Additions.h"
+#import "VTUtils.h"
+#import "AFHTTPRequestOperationManager.h"
+#import "UIImageView+AFNetworking.h"
+
+#endif
